@@ -4,32 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Webpage Design</title>
+    <title>Design</title>
     <style>
         body{
-            height: 947px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 0;
+            margin: 0;
         }
-        .vk_p1{
-            background-color: plum;
+        .vk_part{
             height: 947px;
+            background-color: white;
+            color: #42235F;
         }
-        .vk_p2{
-            background-color: purple;
+        .vk_part2{
             height: 947px;
+            background-color: #42235F;
+            color: white;
+        }
+        img{
+            float: inline-start;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }          
+        form{
+            margin-top: 150px;
+        }
+        h1{
+            font-weight: 500;  
+        }
+        .vk_email{
+            font-weight: 200;
+            border: none;
+            border-bottom: 2px solid #42235F;
+            border-radius: 0;
+            outline: none;
+        }
+        .vk_pass{
+            font-weight: 200;
+            border: none;
+            border-bottom: 2px solid #42235F;
+            border-radius: 0;
+        }
+        .vk_btn{
+            font-weight: 200;
+        }
+        h2{
+            margin-top: 250px;
+            font-weight: 500;
+        }
+        .vk_p{
+            font-weight: 200;
+        }
+        .vk_fp{
+            float: inline-end;
         }
     </style>
 </head>
-<body>
+<body>  
     <div class="container-fluid">
         <div class="row">
-            <div class="col-8 vk_p1">
-                <h1>Jai Shree Ram</h1>
+            <div class="col-sm-8 vk_part">
+                <img src="FT1.png" alt="logo">
+                <div class="container ">
+                    <div class="col-md-6 offset-md-3"> 
+                    <form>
+                        <div class="container text-center">
+                            <h1>Welcome back!</h1>
+                            <br>
+                            <p class="h5">Please Login To Your Ideal Insight Account.</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="mb-3">
+                          <input type="email" class="form-control vk_email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <br>
+                        <div class="mb-3">
+                          <input type="password" class="form-control vk_pass" id="exampleInputPassword1" placeholder="Enter Password">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                          <p class="vk_fp"><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Forgot Password?</a></p>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="d-grid gap-2">
+                            <button type="button" class="btn btn-warning btn-primary vk_btn">LOGIN</button>
+                        </div>
+                        <br>
+                        <p class="vk_fp"><a class="link-offset-2 link-underline link-underline-opacity-100" href="#">Facing Problem With Login Contact Help Desk</a></p>
+                    </form>
+                    </div>
+                </div>
             </div>
-            <div class="col-4 vk_p2">
-
+            <div class="col-sm-4 vk_part2">
+                <div class="col-md-6 offset-md-3"> 
+                        <div class="container text-center">
+                            <h2>Hello, Friend!</h2>
+                            <br>
+                            <p class="h5 vk_p">Enter Your Details And <br> Start Journey With Us.</p>
+                            <br>
+                            <button type="button" class="btn btn-outline-warning">SIGN UP</button>
+                      </div>
             </div>
-        </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
